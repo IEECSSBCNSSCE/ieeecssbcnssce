@@ -1,4 +1,6 @@
 # IEEE SB CS NSSCE Website 🌐
+- View our website at [ieeecssbnssce](https://ieecssbcnssce.github.io/ieeecssbcnnssce/).
+
 
 This repository contains the official website of **IEEE Student Branch CS Society, NSS College of Engineering (NSSCE)**.  
 It serves as a central platform to showcase our activities, events, achievements, and initiatives that promote technology and innovation within the IEEE community at NSSCE.
@@ -86,4 +88,5 @@ We welcome and appreciate all contributions! Here is the general process for con
 7.  **Wait for Review:** The project maintainers will review your PR. We may suggest some changes or improvements.
 
 Thank you for your interest in contributing!
+
 
