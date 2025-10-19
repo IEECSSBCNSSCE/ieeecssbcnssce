@@ -1,0 +1,54 @@
+/* --- General Footer Styling --- */
+.footer {
+  background: linear-gradient(90deg, #002c5c, #004a9e); /* Darker IEEE blue gradient */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #ffd700; /* IEEE gold color */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* --- Responsive Design --- */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
