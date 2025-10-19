@@ -11,6 +11,20 @@ It serves as a central platform to showcase our activities, events, achievements
 - Gallery showcasing recent activities 
 - Contact and membership details 
 
+## 🛠️ Tech Stack
+This website is built using the following technologies:
+
+* **React.js**: A JavaScript library for building user interfaces.
+* **npm**: Used for package management.
+* **GitHub Pages**: Used for hosting the live website.
+
+## 🚀 Roadmap (Future Works)
+We have many exciting plans for the website! Our current goals are being tracked as issues and include:
+
+* **New Pages**: Adding a Team Page (#6), Projects Page (#7), and Contact Page (#8).
+* **New Components**: Implementing a website-wide Footer (#9).
+* **UI/UX**: A complete website redesign (#10).
+
 ## 📫 Contributing
 We welcome contributions!  
 
