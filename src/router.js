@@ -33,7 +33,7 @@ const router = createBrowserRouter([
     ],
   },
 ], {
-  basename: 'ieeecssbcnssce',
+  basename: '/ieeecssbcnssce',
 });
 
 export default router;
