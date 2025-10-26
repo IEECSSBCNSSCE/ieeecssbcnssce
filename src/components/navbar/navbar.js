@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './navbar.css'; // We will create this CSS file next
 
 const Navbar = () => {
@@ -10,13 +11,18 @@ const Navbar = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Function to close mobile menu when a link is clicked
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo or Title */}
-        <a href="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo">
           IEEE SB CS 💻
-        </a>
+        </Link>
 
         {/* Hamburger Menu Icon for Mobile */}
         <div className="menu-icon" onClick={toggleMobileMenu}>
@@ -29,19 +35,19 @@ const Navbar = () => {
         {/* Navigation Links */}
         <ul className={isMobileMenuOpen ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
-            <a href="/" className="nav-link">Home</a>
+            <Link to="/" className="nav-link" onClick={closeMobileMenu}>Home</Link>
           </li>
           <li className="nav-item">
-            <a href="/events" className="nav-link">Events</a>
+            <Link to="/events" className="nav-link" onClick={closeMobileMenu}>Events</Link>
           </li>
           <li className="nav-item">
-            <a href="/team" className="nav-link">Our Team</a>
+            <Link to="/team" className="nav-link" onClick={closeMobileMenu}>Our Team</Link>
           </li>
           <li className="nav-item">
-            <a href="/projects" className="nav-link">Projects</a>
+            <Link to="/projects" className="nav-link" onClick={closeMobileMenu}>Projects</Link>
           </li>
           <li className="nav-item">
-            <a href="/contact" className="nav-link">Contact</a>
+            <Link to="/contact" className="nav-link" onClick={closeMobileMenu}>Contact</Link>
           </li>
         </ul>
       </div>

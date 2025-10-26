@@ -1,29 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import ProjectsGrid from '../projectsGrid/ProjectsGrid.js';
+import { projectsData } from '../../data/projectsData';
 import './homepage.css'; // We'll create this CSS file next
 
 const HomePage = () => {
-  // Place holder for Project Section
-  const projects = [
-      {
-          image: 'https://placehold.co/600x400/002c5c/ffd700?text=Project+One',
-          title: 'AI-Powered Chatbot',
-          description: 'A cutting-edge chatbot designed to assist students with course selection and campus information.',
-          link: '#'
-      },
-      {
-          image: 'https://placehold.co/600x400/002c5c/ffd700?text=Project+Two',
-          title: 'IoT Smart Campus',
-          description: 'An initiative to deploy sensors across campus for real-time monitoring of environment and resource usage.',
-          link: '#'
-      },
-      {
-          image: 'https://placehold.co/600x400/002c5c/ffd700?text=Project+Three',
-          title: 'Competitive Coding Platform',
-          description: 'An online platform for hosting coding contests and helping students prepare for technical interviews.',
-          link: '#'
-      }
-  ];
-
   return (
     <main className="home-page">
       {/* --- Hero Section --- */}
@@ -32,7 +13,7 @@ const HomePage = () => {
         <div className="hero-content">
           <h1>Innovate, Learn, and Grow with IEEE CS</h1>
           <p>The official hub for student developers, engineers, and tech enthusiasts at our institution.</p>
-          <a href="/contact" className="btn btn-primary">Join Our Community</a>
+          <Link to="/contact" className="btn btn-primary">Join Our Community</Link>
         </div>
       </header>
 
@@ -70,23 +51,18 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* --- Our Projects Section --- */}
-      <section className="projects-section">
-          <div className="container">
-              <h2>Our Projects</h2>
-              <div className="projects-grid">
-                  {projects.map((project, index) => (
-                      <div key={index} className="project-card">
-                          <img src={project.image} alt={project.title} className="project-image" />
-                          <div className="project-content">
-                              <h3>{project.title}</h3>
-                              <p>{project.description}</p>
-                              <a href={project.link} className="btn btn-secondary">Learn More</a>
-                          </div>
-                      </div>
-                  ))}
-              </div>
+      {/* --- Projects Preview Section --- */}
+      <section className="projects-preview-section">
+        <div className="container">
+          <h2>Our Projects</h2>
+          <p className="lead">
+            Discover the innovative projects developed by our members, from AI chatbots to IoT solutions.
+          </p>
+          <ProjectsGrid projects={projectsData} limit={3} />
+          <div className="projects-cta">
+            <Link to="/projects" className="btn btn-primary">View All Projects</Link>
           </div>
+        </div>
       </section>
 
       {/* --- Call to Action Section --- */}
@@ -94,7 +70,7 @@ const HomePage = () => {
         <div className="container">
           <h2>Ready to Get Started?</h2>
           <p>Become a member today and unlock a world of opportunities.</p>
-          <a href="/contact" className="btn btn-secondary">Become a Member</a>
+          <Link to="/contact" className="btn btn-secondary">Become a Member</Link>
         </div>
       </section>
     </main>
