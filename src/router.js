@@ -4,6 +4,7 @@ import HomePage from './components/homepage/homepage';
 import Projects from './components/projects/projects';
 import Contacts from './components/contact/contact';
 import NotFound from './components/notfound/NotFound';
+import Team from './components/team/Team';
 
 // Create the router configuration with data router API
 const router = createBrowserRouter([
@@ -24,7 +25,10 @@ const router = createBrowserRouter([
         element: <Contacts />,
       },
       // Add other routes here as needed (events, team, contact, etc.)
-      
+      {
+        path: 'team',
+        element: <Team />,
+      },
       // Catch-all route for 404 Not Found
       {
         path: '*',
