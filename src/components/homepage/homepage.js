@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProjectsGrid from '../projectsGrid/ProjectsGrid.js';
-import { projectsData } from '../../data/projectsData';
 import './homepage.css'; // We'll create this CSS file next
 
 const HomePage = () => {
@@ -47,20 +45,6 @@ const HomePage = () => {
               <h3>Networking Events</h3>
               <p>Connect with industry professionals, alumni, and fellow students at our seminars, tech talks, and social gatherings.</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- Projects Preview Section --- */}
-      <section className="projects-preview-section">
-        <div className="container">
-          <h2>Our Projects</h2>
-          <p className="lead">
-            Discover the innovative projects developed by our members, from AI chatbots to IoT solutions.
-          </p>
-          <ProjectsGrid projects={projectsData} limit={3} />
-          <div className="projects-cta">
-            <Link to="/projects" className="btn btn-primary">View All Projects</Link>
           </div>
         </div>
       </section>
