@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProjectsGrid from '../projectsGrid/ProjectsGrid.js';
-import { projectsData } from '../../data/projectsData';
 import './homepage.css'; // We'll create this CSS file next
 
 const HomePage = () => {
