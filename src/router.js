@@ -4,6 +4,7 @@ import HomePage from './components/homepage/homepage';
 import Projects from './components/projects/projects';
 import Contacts from './components/contact/contact';
 import NotFound from './components/notfound/NotFound';
+import Profile from './components/Profile/Profile';
 
 // Create the router configuration with data router API
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: 'contacts',
         element: <Contacts />,
+      },
+      {
+        path: 'profile',
+        element: <Profile />,
       },
       // Add other routes here as needed (events, team, contact, etc.)
       

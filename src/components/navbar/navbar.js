@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'; // We will create this CSS file next
+import { FaUserCircle } from 'react-icons/fa';
 
 const Navbar = () => {
   // State to manage whether the mobile navigation is open or closed
@@ -50,6 +51,12 @@ const Navbar = () => {
             <Link to="/contacts" className="nav-link" onClick={closeMobileMenu}>Contact</Link>
           </li>
         </ul>
+         {/* Profile Icon */}
+        <div className="profile-icon">
+          <Link to="/profile" onClick={closeMobileMenu}>
+            <FaUserCircle size={28} color="#fff" />
+          </Link>
+        </div>
       </div>
     </nav>
   );

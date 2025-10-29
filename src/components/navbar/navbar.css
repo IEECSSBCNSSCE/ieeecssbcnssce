@@ -128,3 +128,18 @@
     display: flex; /* Show the hamburger icon on smaller screens */
   }
 }
+.profile-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.profile-icon a {
+  color: white;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.profile-icon a:hover {
+  color: #00aced;
+  transform: scale(1.1);
+}
