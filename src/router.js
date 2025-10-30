@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
+import AuthFlow from './components/AuthFlow';
 import HomePage from './components/homepage/homepage';
 import Projects from './components/projects/projects';
 import Contacts from './components/contact/contact';
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: 'auth',
+        element: <AuthFlow />,
       },
       {
         path: 'projects',
