@@ -18,6 +18,7 @@ This repository contains the official website of the **IEEE Student Branch CS So
 This website is built using the following core technologies:
 
 * **React.js**: A JavaScript library for building user interfaces.
+* **Firebase**: Authentication system.
 * **npm**: Used for package management.
 * **GitHub Pages**: Used for hosting the live website.
 
@@ -78,6 +79,43 @@ We welcome contributions! To contribute, you first need to get the project runni
 
 ---
 
+## Authentication Feature
+
+We have integrated a **Firebase Authentication system** to enable secure user access and account management on the IEEE SB CS NSSCE website.
+
+### Key Features
+
+* **Login and Sign Up Pages:**  
+  Users can create an account or log in securely using email and password.
+
+* **Firebase Integration:**  
+  User authentication is handled using **Firebase Auth** ensuring data security and real-time access control.
+
+---
+
+### How to Set Up Firebase Authentication Locally
+
+1. **Create a Firebase Project**
+   - Go to [Firebase Console](https://console.firebase.google.com/).
+   - Click **Add project** → name it → click **Create Project**.
+
+2. **Enable Authentication**
+   - Navigate to **Build → Authentication → Get Started**.
+   - Enable the **Email/Password** sign-in method.
+
+3. **Get Firebase Config**
+   - In your Firebase project settings, locate your web app configuration.
+   - Copy the Firebase config object.
+
+4. **Add Firebase Config to Your Project**
+   - Create a `.env` file in the project root **as per the `.env.example` file** provided in the repository.
+   - Update it with your Firebase project credentials.
+
+5. **Install Firebase**
+   ```bash
+   npm install firebase
+    ```
+    
 ## 🤝 How to Contribute
 
 We welcome and appreciate all contributions! Here is the general process for contributing to our project.
