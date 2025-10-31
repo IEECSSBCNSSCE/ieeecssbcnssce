@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'; // We will create this CSS file next
 
+
 const Navbar = () => {
   // State to manage whether the mobile navigation is open or closed
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);

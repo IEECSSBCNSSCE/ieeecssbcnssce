@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import ProjectsGrid from '../projectsGrid/ProjectsGrid.js';
 import { projectsData } from '../../data/projectsData';
 
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
 import './homepage.css';
+import './homepage.css'; // We'll create this CSS file next
 
 const HomePage = () => {
 
@@ -44,7 +44,7 @@ const HomePage = () => {
         <div className="hero-content">
           <h1>Innovate, Learn, and Grow with IEEE CS</h1>
           <p>The official hub for student developers, engineers, and tech enthusiasts at our institution.</p>
-          <Link to="/contact" className="btn btn-primary">Join Our Community</Link>
+          <Link to="/join" className="btn btn-primary">Join Our Community</Link>
         </div>
       </header>
 
@@ -105,20 +105,6 @@ const HomePage = () => {
               <img src="https://picsum.photos/800/400?random=5" alt="Demo Activity 5" />
             </div>
           </Slider>
-        </div>
-      </section>
-
-      {/* --- Projects Preview Section --- */}
-      <section className="projects-preview-section">
-        <div className="container">
-          <h2>Our Projects</h2>
-          <p className="lead">
-            Discover the innovative projects developed by our members, from AI chatbots to IoT solutions.
-          </p>
-          <ProjectsGrid projects={projectsData} limit={3} />
-          <div className="projects-cta">
-            <Link to="/projects" className="btn btn-primary">View All Projects</Link>
-          </div>
         </div>
       </section>
 
