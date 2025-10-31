@@ -1,0 +1,33 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0a192f;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00aced;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-role {
+  color: #9ca3af;
+  margin-bottom: 0.3rem;
+}
+
+.profile-email {
+  color: #9ca3af;
+}

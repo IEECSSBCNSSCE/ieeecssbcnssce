@@ -5,6 +5,7 @@ import HomePage from './components/homepage/homepage';
 import Projects from './components/projects/projects';
 import Contacts from './components/contact/contact';
 import NotFound from './components/notfound/NotFound';
+import Profile from './components/Profile/Profile';
 import JoinForm from './components/joinForm/JoinForm';
 import Team from './components/team/Team';
 
@@ -31,6 +32,8 @@ const router = createBrowserRouter([
         element: <Contacts />,
       },
       {
+        path: 'profile',
+        element: <Profile />,
         path: 'join', // Or '/join' if you prefer an absolute path from basename
         element: <JoinForm />,
       },

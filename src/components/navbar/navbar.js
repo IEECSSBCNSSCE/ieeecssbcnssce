@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'; // We will create this CSS file next
+import { FaUserCircle } from 'react-icons/fa';
 
 
 const Navbar = () => {
@@ -54,6 +55,12 @@ const Navbar = () => {
             <Link to="/auth" className="nav-link" onClick={closeMobileMenu}>Login / Sign Up</Link>
           </li>
         </ul>
+         {/* Profile Icon */}
+        <div className="profile-icon">
+          <Link to="/profile" onClick={closeMobileMenu}>
+            <FaUserCircle size={28} color="#fff" />
+          </Link>
+        </div>
       </div>
     </nav>
   );
