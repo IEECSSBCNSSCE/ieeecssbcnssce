@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className="hero-content">
           <h1>Innovate, Learn, and Grow with IEEE CS</h1>
           <p>The official hub for student developers, engineers, and tech enthusiasts at our institution.</p>
-          <Link to="/contact" className="btn btn-primary">Join Our Community</Link>
+          <Link to="/join" className="btn btn-primary">Join Our Community</Link>
         </div>
       </header>
 

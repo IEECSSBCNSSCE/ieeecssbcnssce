@@ -4,6 +4,7 @@ import HomePage from './components/homepage/homepage';
 import Projects from './components/projects/projects';
 import Contacts from './components/contact/contact';
 import NotFound from './components/notfound/NotFound';
+import JoinForm from './components/joinForm/JoinForm';
 import Team from './components/team/Team';
 
 // Create the router configuration with data router API
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: 'contacts',
         element: <Contacts />,
+      },
+      {
+        path: 'join', // Or '/join' if you prefer an absolute path from basename
+        element: <JoinForm />,
       },
       // Add other routes here as needed (events, team, contact, etc.)
       {
