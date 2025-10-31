@@ -140,7 +140,7 @@ We welcome and appreciate all contributions! Here is the general process for con
 
     ```bash
     git add .
-    git commit -m "feat: Add the events page with initial layout"
+    git commit -m "feat: Add the events pages with initial layout"
     ```
 
 5.  **Push to Your Fork:** Push your branch to your forked repository on GitHub.
@@ -152,5 +152,6 @@ We welcome and appreciate all contributions! Here is the general process for con
 6.  **Create a Pull Request (PR):** Go to your forked repository on GitHub and click the "Compare & pull request" button. Create a PR to merge your branch into the `main` branch of the original repository.
 
 7.  **Wait for Review:** The project maintainers will review your PR. We may suggest some changes or improvements.
+
 
 Thank you for your interest in contributing!
