@@ -113,7 +113,7 @@ const HomePage = () => {
         <div className="container">
           <h2>Ready to Get Started?</h2>
           <p>Become a member today and unlock a world of opportunities.</p>
-          <Link to="/contact" className="btn btn-secondary">Become a Member</Link>
+          <Link to="/contacts" className="btn btn-secondary">Become a Member</Link>
         </div>
       </section>
     </main>
