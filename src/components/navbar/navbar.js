@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './navbar.css'; // We will create this CSS file next
 import { FaUserCircle } from 'react-icons/fa';
 
+
 const Navbar = () => {
   // State to manage whether the mobile navigation is open or closed
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -49,6 +50,9 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link to="/contacts" className="nav-link" onClick={closeMobileMenu}>Contact</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/auth" className="nav-link" onClick={closeMobileMenu}>Login / Sign Up</Link>
           </li>
         </ul>
          {/* Profile Icon */}
