@@ -3,10 +3,14 @@ import ProjectsGrid from '../projectsGrid/ProjectsGrid';
 import { projectsData } from '../../data/projectsData';
 import './projects.css';
 
+// Filter projects by status
+const completed = projectsData.filter(project => project.status === 'completed');
+const ongoing = projectsData.filter(project => project.status === 'ongoing');
+const future = projectsData.filter(project => project.status === 'future');
+
 const Projects = () => {
   return (
     <main className="projects-page">
-      {/* --- Hero Section for Projects Page --- */}
       <header className="projects-hero">
         <div className="hero-overlay"></div>
         <div className="hero-content">
@@ -15,10 +19,14 @@ const Projects = () => {
         </div>
       </header>
 
-      {/* --- Projects Section --- */}
       <section className="projects-section">
         <div className="container">
-          <ProjectsGrid projects={projectsData} />
+          <h2>Ongoing Projects</h2>
+          <ProjectsGrid projects={ongoing} />
+          <h2>Completed Projects</h2>
+          <ProjectsGrid projects={completed} />
+          <h2>Future Projects</h2>
+          <ProjectsGrid projects={future} />
         </div>
       </section>
     </main>
@@ -26,4 +34,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
