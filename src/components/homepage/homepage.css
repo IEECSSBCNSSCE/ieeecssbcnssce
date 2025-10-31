@@ -1,7 +1,7 @@
-/* --- General Page & Container Styling --- */
 .home-page {
   font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
   color: #333;
+  background-color: #001a33; /* <-- ADD THIS LINE */
 }
 
 .container {
@@ -10,7 +10,6 @@
   padding: 0 24px;
 }
 
-/* --- Reusable Button Styling --- */
 .btn {
   display: inline-block;
   padding: 12px 28px;
@@ -24,7 +23,7 @@
 }
 
 .btn-primary {
-  background-color: #ffd700; /* IEEE gold */
+  background-color: #ffd700;
   color: #002c5c;
 }
 
@@ -35,7 +34,7 @@
 
 .btn-secondary {
   background-color: #fff;
-  color: #002c5c; /* IEEE dark blue */
+  color: #002c5c;
   border: 2px solid #002c5c;
 }
 
@@ -44,8 +43,6 @@
   color: #fff;
 }
 
-
-/* --- Hero Section --- */
 .hero-section {
   position: relative;
   height: 90vh;
@@ -54,7 +51,6 @@
   justify-content: center;
   text-align: center;
   color: #fff;
-  /* IMPORTANT: Replace this with a high-quality background image */
   background: url('https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=2070') no-repeat center center/cover;
 }
 
@@ -64,7 +60,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 44, 92, 0.7); /* IEEE blue overlay */
+  background-color: rgba(0, 44, 92, 0.7);
 }
 
 .hero-content {
@@ -86,32 +82,6 @@
   font-weight: 300;
 }
 
-
-/* --- Shared Section Styling --- */
-.mission-section, .features-section, .cta-section {
-  padding: 80px 0;
-  text-align: center;
-}
-
-.mission-section h2, .features-section h2, .cta-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #002c5c;
-}
-
-.lead {
-  font-size: 1.25rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-  color: #555;
-}
-
-/* --- Features Section --- */
-.features-section {
-  background-color: #f9f9f9;
-}
-
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -120,7 +90,7 @@
 }
 
 .feature-card {
-  background: #fff;
+  background: #001f3f;
   padding: 2.5rem 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -140,16 +110,14 @@
 .feature-card h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #004a9e;
+  color: #ffd700;
 }
 
-/* --- Call to Action (CTA) Section --- */
-.cta-section p {
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
+.projects-cta {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-/* --- Media Queries for Responsiveness --- */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
@@ -162,24 +130,50 @@
   }
 }
 
-/* --- Projects Preview Section --- */
-.projects-preview-section {
-    padding: 80px 0;
-    background-color: #fff; /* White background to contrast with features */
-    text-align: center;
+.mission-section,
+.features-section,
+.projects-preview-section,
+.slider-section,
+.cta-section {
+  padding: 60px 0;
 }
 
-.projects-preview-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #002c5c;
+.mission-section h2,
+.features-section h2,
+.projects-preview-section h2,
+.slider-section h2,
+.cta-section h2 {
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
-.projects-preview-section .lead {
-    margin-bottom: 1rem;
+.mission-section .lead,
+.features-section .feature-card p,
+.projects-preview-section .lead,
+.slider-section .lead,
+.cta-section p {
+  color: #e0e0e0;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-.projects-cta {
-    text-align: center;
-    margin-top: 2rem;
+.features-section .feature-card p {
+  text-align: left;
+}
+
+.slider-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slider-section img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
