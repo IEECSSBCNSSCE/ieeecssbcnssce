@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Quantum Computing Workshop",
+    "date": "March 15, 2025",
+    "description": "An intensive workshop on the fundamentals of quantum algorithms and their real-world applications.",
+    "type": "Workshop",
+    "status": "Upcoming",
+    "cta": "Register Now"
+  },
+  {
+    "id": 2,
+    "title": "CS-NSSCE Hackathon 5.0",
+    "date": "April 05, 2025",
+    "description": "The flagship 24-hour hackathon where students build innovative solutions for social problems.",
+    "type": "Hackathon",
+    "status": "Registration Open",
+    "cta": "Apply Now"
+  },
+  {
+    "id": 3,
+    "title": "AI in Edge Devices",
+    "date": "May 10, 2025",
+    "description": "Learn how to deploy machine learning models on low-power IoT devices.",
+    "type": "Seminar",
+    "status": "Coming Soon",
+    "cta": "Notify Me"
+  }
+]

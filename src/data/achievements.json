@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Outstanding Student Chapter Award",
+    "year": "2024",
+    "description": "Recognized for excellence in technical activities and student engagement across Kerala Section.",
+    "category": "Regional"
+  },
+  {
+    "id": 2,
+    "title": "Global Hackathon Winners",
+    "year": "2023",
+    "description": "Team representing NSSCE won the first prize in the IEEE CS Global Design Competition.",
+    "category": "Global"
+  },
+  {
+    "id": 3,
+    "title": "Top Tech Community",
+    "year": "2022",
+    "description": "Awarded for organizing the highest number of technical workshops in a calendar year.",
+    "category": "Section"
+  }
+]
